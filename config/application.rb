@@ -16,7 +16,6 @@ module OratorClub
     end
     # Precompile Bootstrap fonts
     config.assets.precompile << %r(bootstrap-sass-officail/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
-    config.assets.precompile << %r(components-font-awesome/fonts/fontawesome[\w-]+\.(?:eot|svg|ttf|woff2?)$)
     # Minimum Sass number precision required by bootstrap-sass
     ::Sass::Script::Number.precision = [8, ::Sass::Script::Number.precision].max
     # Settings in config/environments/* take precedence over those specified here.

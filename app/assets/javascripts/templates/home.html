@@ -72,33 +72,17 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" >
       <div class="container">
         <div class="row">
           <!-- Carousel -->
           <div class="j-carousel">
             <!-- Carousel item -->
-            <div class="item col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="item col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" ng-repeat="testimonial in testimonials">
               <blockquote>
                 <i class="fa quotes fa-quote-left"></i>
-                <h3>"Хорошо говорить - означает просто хорошо думать вслух."</h3>
-                <cite>- Ренан -</cite>
-              </blockquote>
-            </div>
-            <!-- Carousel item -->
-            <div class="item col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <blockquote>
-                <i class="fa quotes fa-quote-left"></i>
-                <h3>"Заговори, что бы я тебя увидел!"</h3>
-                <cite>- Сократ -</cite>
-              </blockquote>
-            </div>
-            <!-- Carousel item -->
-            <div class="item col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <blockquote>
-                <i class="fa quotes fa-quote-left"></i>
-                <h3>"Устное слово всегда плодотворнее письменного: оно живит душу слушающего и говорящего."</h3>
-                <cite>- А. Кони -</cite>
+                <h3>{{testimonial.quote}}</h3>
+                <cite>- {{testimonial.author}} -</cite>
               </blockquote>
             </div>
           </div>
@@ -121,144 +105,12 @@
             </div>
           </div>
         </header>
-
-        <!-- Filter -->
-        <!-- <ul class="filter clearfix">
-          <li class="active"><a href="#" title="#" data-filter="all">All</a></li>
-          <li><a href="#" title="#" data-filter="flowers">Flowers</a></li>
-          <li><a href="#" title="#" data-filter="country">Country</a></li>
-          <li><a href="#" title="#" data-filter="heaven">Heaven</a></li>
-        </ul>
-
-        <!-- Content -->
-        <!-- <ul id="og-grid" class="row og-grid">
-          <li class="i all flowers heaven">
-            <a class="c borderedHover wow bounceInLeft" data-wow-delay="0.3s" href="http://pulse.tomaj.sk/v1.5/www.projectname1.com" data-largesrc="assets/tmp/1110x560-1.jpg" data-title="Project name 1" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 1.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-1.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-          <li class="i all flowers">
-            <a class="c borderedHover wow bounceInDown" data-wow-delay="0.6s" href="http://pulse.tomaj.sk/v1.5/www.projectname2.com" data-largesrc="assets/tmp/1110x560-2.jpg" data-title="Project name 2" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 2.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-2.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-vk"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-          <li class="i all heaven country">
-            <a class="c borderedHover wow bounceInRight" data-wow-delay="0.9s" href="http://pulse.tomaj.sk/v1.5/www.projectname3.com" data-largesrc="assets/tmp/1110x560-3.jpg" data-title="Project name 3" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 3.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-3.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-vk"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-          <li class="i all heaven">
-            <a class="c borderedHover wow fadeInUp" data-wow-delay="1.2s" href="http://pulse.tomaj.sk/v1.5/www.projectname4.com" data-largesrc="assets/tmp/1110x560-4.jpg" data-title="Project name 4" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 4.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-4.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-vk"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-          <li class="i all country">
-            <a class="c borderedHover wow fadeInUp" data-wow-delay="1.5s" href="http://pulse.tomaj.sk/v1.5/www.projectname5.com" data-largesrc="assets/tmp/1110x560-5.jpg" data-title="Project name 5" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 5.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-5.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-vk"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-          <li class="i all heaven">
-            <a class="c borderedHover wow fadeInUp" data-wow-delay="1.8s" href="http://pulse.tomaj.sk/v1.5/www.projectname6.com" data-largesrc="assets/tmp/1110x560-6.jpg" data-title="Project name 6" data-description="Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, fauc ibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros 6.">
-              <div class="wrap">
-                <div class="info">
-                  <div class="info-wrap">
-                    <i class="icon fa fa-expand"></i>
-                    <h3>Name of the caption</h3>
-                  </div>
-                </div>
-                <img src="assets/tmp/310x310-6.jpg" alt="#" width="310" height="310" class="img-responsive">
-              </div>
-            </a>
-
-            <ul class="social">
-              <li><a href="#" title="#" class="icon"><i class="fa fa-vk"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" title="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </li>
-        </ul> -->
       </div>
     </section>
 
     <!-- Video -->
     <section class="video">
-      <div class="parallax js-video" data-mfp-src="http://vimeo.com/92112616">
+      <div class="parallax js-video" data-mfp-src="https://www.youtube.com/watch?v=7jSBQRGUyts">
         <div class="container content">
           <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">

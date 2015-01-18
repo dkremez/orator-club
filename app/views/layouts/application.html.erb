@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OratorClub</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app="oratorClub" data-spy="scroll" data-target=".navbar" data-offset="70">
+  <%= yield %>  
+  <%= javascript_include_tag 'application' %>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+</body>
+</html>

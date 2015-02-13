@@ -1,10 +1,11 @@
 angular
     .module('oratorClub', [
         'ngAnimate',
+        'ngResource',
         'ui.router',
         'templates'
     ])
-    .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
         /**
          * Routes and States
          */
@@ -18,6 +19,9 @@ angular
         // default fall back route
         $urlRouterProvider.otherwise('/');
 
+        $httpProvider.defaults.headers.common['X-CSRF-Token'] =
+            $('meta[name=csrf-token]').attr('content');
+
         // enable HTML5 Mode for SEO
         // $locationProvider.html5Mode(true);
-    });
+    }]);

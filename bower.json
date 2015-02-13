@@ -8,6 +8,7 @@
     "dependencies": {
       "angular": "v1.3.9",
       "angular-ui-router": "latest",
+      "angular-resource": "latest",
       "angular-animate": "latest",
       "bootstrap-sass-official": "v3.3.1"
     }

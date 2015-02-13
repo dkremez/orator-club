@@ -1,7 +1,7 @@
 angular.module('oratorClub')
-    .directive('pageHeader', function () {
+    .directive('pageHeader', [ ()->
         return {
             restrict: 'E',
             templateUrl: 'header.html'
-        };
-    });
+        }
+    ])

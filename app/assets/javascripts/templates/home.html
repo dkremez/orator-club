@@ -182,7 +182,7 @@
     </section>
 
     <!-- Blog -->
-    <section id="blog">
+    <section id="blog" class="hide">
       <div class="container">
         <!-- Header -->
         <header>
@@ -421,7 +421,7 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing">
+    <section id="pricing" class="hide">
       <div class="container">
         <!-- Header -->
         <header>
@@ -492,7 +492,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" >
+    <section id="contact">
       <div class="container">
         <!-- Header -->
         <header class="font-white">
@@ -519,12 +519,11 @@
             <span class="wow fadeInRight" data-wow-delay="0.4s"><i class="fa fa-envelope-o icon"></i> orator-club@gmail.com</span>
             <span class="wow fadeInRight" data-wow-delay="0.6s"><i class="fa fa-phone icon"></i>+375(29) 749 09 10</span>
           </div>
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <form role="form" data-parsley-validate>
-              <input type="text" class="form-control wow fadeInLeft" data-wow-delay="0.2s" placeholder="Имя" required data-parsley-error-message=" Введи имя">
-              <input type="text" class="form-control wow fadeInLeft" data-wow-delay="0.2s" placeholder="Телефон" required data-parsley-error-message="Введи телефон">
-              <input type="email" class="form-control wow fadeInLeft" data-wow-delay="0.4s" placeholder="Email" required data-parsley-error-message="Введи email">
-              <!-- <textarea class="form-control wow fadeInLeft" data-wow-delay="0.6s" rows="6" placeholder="Message" required data-parsley-error-message="Enter message"></textarea> -->
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2" ng-controller="EntryCtrl">
+              <form role="form" ng-submit="save()" data-parsley-validate>
+              <input ng-model='entry.name' type="text" class="form-control wow fadeInLeft" data-wow-delay="0.2s" placeholder="Имя" required data-parsley-error-message="Введи имя">
+              <input ng-model='entry.phone' type="text" class="form-control wow fadeInLeft" data-wow-delay="0.2s" placeholder="Телефон" required data-parsley-error-message="Введи телефон">
+              <input ng-model='entry.email' type="email" class="form-control wow fadeInLeft" data-wow-delay="0.4s" placeholder="Email" required data-parsley-error-message="Введи email">
               <button type="submit" class="btn btn-lg wow fadeInUp" data-wow-delay="1s">Подать заявку</button>
             </form>
           </div>

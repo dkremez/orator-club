@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :api do
+    resources :entries, defaults: {format: :json}
+  end
+
   root 'application#index'
   get '*path' => 'application#index'
   # The priority is based upon order of creation: first created -> highest priority.

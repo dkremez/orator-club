@@ -1,13 +1,13 @@
-set :application, 'app_name'
+set :application, 'orator-club'
 set :deploy_user, 'deploy'
 
 # setup repo details
 set :scm, :git
-set :repo_url, 'git@github.com:username/repo.git'
+set :repo_url, 'https://github.com/kremez19/orator-club.git'
 
 # setup rbenv.
 set :rbenv_type, :system
-set :rbenv_ruby, '2.1.1'
+set :rbenv_ruby, '2.2.0'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 

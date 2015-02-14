@@ -1,1 +1,1 @@
-NonStupidDigestAssets.whitelist += [/features\/.*/, /tmp\/.*/, /.*.png/, /.*.jpg/, /.*.gif/]
+NonStupidDigestAssets.whitelist += [/font-awesome\/.*/, /features\/.*/, /tmp\/.*/, /.*.png/, /.*.jpg/, /.*.gif/]

@@ -162,6 +162,9 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    sprockets-redirect (0.3.0)
+      activesupport (>= 3.1.0)
+      rack
     sshkit (1.6.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
@@ -208,6 +211,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
+  sprockets-redirect
   uglifier (>= 1.3.0)
   unicorn
   web-console (~> 2.0)

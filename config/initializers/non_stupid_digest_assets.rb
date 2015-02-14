@@ -1,0 +1,1 @@
+NonStupidDigestAssets.whitelist += [/features\/.*/, /tmp\/.*/, /.*.png/, /.*.jpg/, /.*.gif/]

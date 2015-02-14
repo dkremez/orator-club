@@ -54,6 +54,4 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
-group :production, :staging do
-  gem 'sprockets-redirect'
-end
+gem 'non-stupid-digest-assets'

@@ -37,6 +37,7 @@ module Api
 
       respond_to do |format|
         if @entry.save
+          EntryMailer.new_record_notification(@entry).deliver_later
           format.html { redirect_to @entry, notice: 'Entry was successfully created.' }
           format.json { render json: @entry }
         else

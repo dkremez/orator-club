@@ -391,6 +391,8 @@
       </div>
     </section>
 
+
+
     <!-- Social -->
     <section id="social">
       <div class="container">
@@ -536,6 +538,33 @@
       <div id="googleMap" class="wow flipInX" data-lat="53.9254915" data-lng="27.620442"></div>
     </div>
 
+    <section id="media-group">
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 wow fadeInDown">
+                        <h1>Присоединяйтесь к нам в социальных сетях!</h1>
+                        <div class="dotted-break">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 vk">
+                    <!-- VK Widget -->
+                    <div id="vk_groups"></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Group("vk_groups", {mode: 0, width: "470", height: "260", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 44089177);
+                    </script>
+                </div>
+                <div class="col-md-6 facebook">
+                    <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgoupby&width=450&height=258&colorscheme=light&show_faces=true&header=false&stream=false&show_border=true&appId=487944067978703" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:258px;" allowTransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="footer">
       <div class="social">
         <a href="#" title="#" class="icon"><i class="fa fa-facebook"></i></a>
@@ -551,20 +580,18 @@
   </div>
 
   <!-- Modals -->
-  <div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="modalText" aria-hidden="true">
+  <div class="modal fade" id="newEntry" tabindex="-1" role="dialog" aria-labelledby="newEntry" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times"></span></button>
-          <h4 class="modal-title" id="myModalLabel">This might be a detail of simple article</h4>
-          <div class="info subtitle"><span class="fa fa-calendar"></span> 26th march 2014  |  <span class="fa fa-user"></span> John Doe</div>
+          <h4 class="modal-title success" id="newEntry">Заявка принята!</h4>
+          <div class="info subtitle hide"><span class="fa fa-calendar"></span> 26th march 2014  |  <span class="fa fa-user"></span> John Doe</div>
         </div>
-        <p class="intro">Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, faucibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus.</p>
+        <p class="intro alert-success">Спасибо за регистрацию, с вскоре свяжется консультант ораторского клуба.</p>
         <div class="modal-body">
-          <img src="assets/tmp/340x255-1.jpg" alt="#" width="340" height="255" class="img-responsive pull-right">
-          <p>Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, faucibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod.</p>
-          <p>Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros. Etiam ultricies vel leo at euismod. Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, faucibus lorem eget, posuere eros.</p>
-          <p>Nulla diam ex, aliquet vel iaculis vitae, consectetur et lectus. Mauris eu scelerisque ligula. Fusce in purus accumsan, faucibus lorem eget, posuere eros. Etiam ultricies vel leo at euismod. Morbi id nisi vitae felis consequat consequat ut non arcu. Vestibu lum sit amet imperdiet tellus. eget, posuere eros. Etiam ultricies vel leo at euismod.</p>
+          <p>Пока подребнее узнать об ораторском клубе вы можете на странице группы вконтакте:
+              <a href="http://vk.com/orator_club_by">Ораторский Клуб в Минске</a></p>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ set :branch, "master"
 # This is used in the Nginx VirtualHost to specify which domains
 # the app should appear on. If you don't yet have DNS setup, you'll
 # need to create entries in your local Hosts file for testing.
-set :server_name, "www.orator-club.by orator-club.by"
+set :server_name, "orator-club.by oratorclub.by www.orator-club.by www.oratorclub.by"
 
 # used in case we're deploying multiple versions of the same
 # app side by side. Also provides quick sanity checks when looking
@@ -25,4 +25,4 @@ set :unicorn_worker_count, 5
 
 # whether we're using ssl or not, used for building nginx
 # config file
-set :enable_ssl, true
+set :enable_ssl, false

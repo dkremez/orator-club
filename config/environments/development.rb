@@ -38,4 +38,14 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "sandbox902e28e61d0541de80454bd8cccb6e3c.mailgun.org",
+      :user_name => "postmaster@sandbox902e28e61d0541de80454bd8cccb6e3c.mailgun.org",
+      :password => "a229ad8c168b1af52913190b8b531086"
+  }
 end

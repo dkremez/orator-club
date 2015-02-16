@@ -1,5 +1,6 @@
 angular.module('oratorClub')
-  .factory 'Entry', ($resource) ->
-    return $resource('/api/entries/:id', {name: 'CFIF'},
+  .factory('Entry',['$resource', ($resource) ->
+    return $resource('/api/entries/:id',
       'update':  { method: 'PUT' }
     )
+  ])

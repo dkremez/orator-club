@@ -23,9 +23,10 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   # config.assets.css_compressor = :sass
+  config.assets.js_compressor = :uglifier
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -35,7 +36,7 @@ Rails.application.configure do
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
-  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -82,4 +83,6 @@ Rails.application.configure do
       :user_name => "postmaster@orator-club.by",
       :password => "16b96b23cda983775ab2fe53e2ca810f"
   }
+
+  config.middleware.use Rack::Prerender, prerender_token: 'g5pQsCvh35omPtQPpovq'
 end

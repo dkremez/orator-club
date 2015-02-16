@@ -48,4 +48,6 @@ Rails.application.configure do
       :user_name => "postmaster@sandbox902e28e61d0541de80454bd8cccb6e3c.mailgun.org",
       :password => "a229ad8c168b1af52913190b8b531086"
   }
+
+  config.middleware.use Rack::Prerender
 end

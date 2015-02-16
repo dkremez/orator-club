@@ -55,3 +55,4 @@ group :development, :test do
 end
 
 gem 'non-stupid-digest-assets'
+gem 'prerender_rails'

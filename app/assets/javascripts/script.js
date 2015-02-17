@@ -16,7 +16,7 @@ $(function() {
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
         }), $(".home-carousel").length && $(".home-carousel").carousel({
             pause: "false",
-            interval: 5e3
+            interval: 6000
         }), $(".js-video").length && $(".js-video").magnificPopup({
             disableOn: 700,
             type: "iframe",

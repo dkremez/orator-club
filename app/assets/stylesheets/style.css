@@ -152,6 +152,7 @@ p {
 .dotted-break span:first-child {
     margin: 0;
 }
+
 .sectionHeader {
     text-align: center;
 }
@@ -182,12 +183,7 @@ section header {
 section header.font-white h2, section header.font-white .stars {
     color: #fff;
 }
-.dotted-break span {
-    background: #fff;
-}
-.dotted-break span:before, .dotted-break span:after {
-    background: #fff;
-}
+
 section header h1 {
     font-size: 50px;
     margin: 5px 0;
@@ -936,6 +932,12 @@ textarea {
     background: #fff;
     padding: 2px 5px;
 }
+#about .dotted-break span {
+    background: #fff;
+}
+#about .dotted-break span:before, #about .dotted-break span:after {
+    background: #fff;
+}
 #blog.subpage {
     padding: 0 0 80px 0;
 }
@@ -1618,6 +1620,13 @@ textarea {
 }
 #contact .info h3 {
     text-transform: uppercase;
+}
+
+#contact .dotted-break span {
+    background: #fff;
+}
+#contact .dotted-break span:before, #contact .dotted-break span:after {
+    background: #fff;
 }
 .googleMapWrap {
     background: #1d1f1e;

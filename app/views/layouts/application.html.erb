@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ораторский клуб в Минске</title>
+  <title>Ораторский клуб, ораторское исскусство в Минске</title>
   <meta name='yandex-verification' content='6436daa0b00e063f' />
   <meta name="google-site-verification" content="jwQ552y9hPYtb9sX0WvAWKNWI-tmsSG3a1_uKOgbFrg" />
   <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="ораторский клуб, ораторское исскусство, ораторство, тренинги, курсы, развитие, ораторское мастерство">
+  <meta name="description" content="Ораторский Клуб – это объединение единомышленников, которым нужны новые знания в сочетании с регулярной практикой публичных выступлений. Мы - это люди, которые хотят развивать свое мышление, свою речь, свое ораторское мастерство.">
   <base href="/">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -14,6 +17,16 @@
   <%= yield %>  
   <%= javascript_include_tag 'application' %>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=487944067978703&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

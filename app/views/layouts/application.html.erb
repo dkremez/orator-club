@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ораторский клуб, ораторское исскусство в Минске</title>
   <meta name='yandex-verification' content='6436daa0b00e063f' />
   <meta name="google-site-verification" content="jwQ552y9hPYtb9sX0WvAWKNWI-tmsSG3a1_uKOgbFrg" />
@@ -9,15 +14,14 @@
   <meta name="keywords" content="ораторский клуб, ораторское исскусство, ораторство, тренинги, курсы, развитие, ораторское мастерство">
   <meta name="description" content="Ораторский Клуб – это объединение единомышленников, которым нужны новые знания в сочетании с регулярной практикой публичных выступлений. Мы - это люди, которые хотят развивать свое мышление, свою речь, свое ораторское мастерство.">
   <base href="/">
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
-  <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
 </head>
 <body ng-app="oratorClub" data-spy="scroll" data-target=".navbar" data-offset="70">
   <%= yield %>  
   <%= javascript_include_tag 'application' %>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-
+  <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
   <!-- Facebook -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

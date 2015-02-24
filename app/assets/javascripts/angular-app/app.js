@@ -17,10 +17,8 @@ angular
             });
 
         // enable HTML5 Mode for SEO
-        $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
-        });
+        $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix('!');
 
         // default fall back route
         $urlRouterProvider.otherwise('/');

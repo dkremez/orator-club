@@ -39,6 +39,14 @@ body {
       text-decoration: none;
     }
   }
+  a.to-contacts {
+    background: #f03f51;
+    color: #000;
+    &:hover {
+      background: #f03f51;
+      color: #000;
+    }
+  }
 }
 
 #wrapper {

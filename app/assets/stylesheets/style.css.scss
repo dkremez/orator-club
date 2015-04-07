@@ -483,19 +483,6 @@ textarea {
             }
           }
         }
-        h1 {
-          font-size: 60px;
-          margin: 5px 0;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-        h2 {
-          font-family: Lato,sans-serif;
-          text-transform: uppercase;
-          font-size: 20px;
-          font-weight: 400;
-          margin: 12px 0 25px;
-        }
         .dotted-break {
           width: 44px;
           height: 5px;
@@ -539,7 +526,7 @@ textarea {
           font-weight: 900;
         }
         h2 {
-          font-size: 20px;
+          font-size: 26px;
           font-weight: 400;
           text-transform: none;
           margin-top: 20px;
@@ -593,6 +580,7 @@ textarea {
   a.to-contacts {
     background: #f03f51;
     color: #fff;
+    margin: 30px;
     &:hover {
       background: #f03f51;
       color: #000;

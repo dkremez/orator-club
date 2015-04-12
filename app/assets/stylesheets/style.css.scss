@@ -432,10 +432,13 @@ textarea {
     padding-right: 15px;
   }
   .navbar-text {
-    margin-top: 23px;
+    margin-top: 20px;
     font-family: Lato, sans-serif;
     font-weight: 400;
     font-size: 14px; 
+    border: 2px solid rgb(240, 63, 81);
+    border-radius: 3px;
+    padding: 0 6px 0 6px;
   }
 }
 
@@ -610,6 +613,23 @@ textarea {
     text-transform: uppercase;
     font-weight: 700;
   }
+  p {
+    font-size: 22px;
+  }
+  b {
+    font-size: 24px;
+  }
+}
+
+#services {
+  div.motive {
+    margin: 20px 0 20px 0;
+    em {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: none;
+    }
+  } 
 }
 
 #testimonials {

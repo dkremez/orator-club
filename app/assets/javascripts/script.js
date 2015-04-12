@@ -63,7 +63,6 @@ $(function() {
                     scrollwheel: !1,
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
                     center: e,
-                    disableDefaultUI: !0,
                     styles: [{
                         featureType: "water",
                         elementType: "geometry",

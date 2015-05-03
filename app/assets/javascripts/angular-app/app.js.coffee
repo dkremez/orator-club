@@ -17,7 +17,7 @@ angular
         .state('masterclass',
           url: '/masterclass',
           templateUrl: 'masterclass.html',
-          controller: 'MasterClassCtrl'
+          controller: 'HomeCtrl'
         )
 
       # enable HTML5 Mode for SEO

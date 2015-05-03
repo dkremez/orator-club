@@ -1,11 +1,11 @@
 angular.module('oratorClub')
     .controller('HeaderCtrl', ['$scope', ($scope)->
         $scope.menu_items = [
-            { href: '#home', title: 'Home', text: 'Главная' },
-            { href: '#features', title: 'About', text: 'О нас' },
+            { href: 'home', title: 'Home', text: 'Главная', scroll: false },
+            { href: '#features', title: 'About', text: 'О нас', scroll: true  },
 #            { href: '#blog', title: 'Blog', text: 'Блог' },
-            { href: '#team', title: 'Our team', text: 'Наша команда' },
-#            { href: '#pricing', title: 'Pricing', text: 'Цены' },
-            { href: '#contact', title: 'Contact', text: 'Контакты' }
+            { href: '#team', title: 'Our team', text: 'Наша команда', scroll: true  },
+            { href: 'masterclass', title: 'Master Class', text: 'Мастер класс', scroll: false },
+            { href: '#contact', title: 'Contact', text: 'Контакты', scroll: true  }
         ]
     ])

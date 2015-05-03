@@ -96,6 +96,13 @@ p {
   line-height: 24px;
 }
 
+ol {
+  li {
+    line-height: 24px;
+    font-size: 18px;
+  }
+}
+
 .parallax {
   background-repeat: no-repeat;
   background-position: center center;
@@ -435,7 +442,7 @@ textarea {
     margin-top: 20px;
     font-family: Lato, sans-serif;
     font-weight: 400;
-    font-size: 14px; 
+    font-size: 14px;
     border: 2px solid rgb(240, 63, 81);
     border-radius: 3px;
     padding: 0 6px 0 6px;
@@ -629,7 +636,7 @@ textarea {
       font-weight: 400;
       text-transform: none;
     }
-  } 
+  }
 }
 
 #testimonials {
@@ -1627,10 +1634,10 @@ textarea {
 
 #why {
   h3 {
-    text-align: center; 
+    text-align: center;
   }
   .fa {
-    display: block;       
+    display: block;
     text-align: center;
     font-size: -webkit-xxx-large;
     padding-top: 10px;

@@ -5,7 +5,7 @@ angular
     'ui.router',
     'templates'
   ])
-  .config([ 
+  .config([
     '$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',
     ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->
       $stateProvider
@@ -13,6 +13,11 @@ angular
           url: '/',
           templateUrl: 'home.html',
           controller: 'HomeCtrl'
+        )
+        .state('masterclass',
+          url: '/masterclass',
+          templateUrl: 'masterclass.html',
+          controller: 'MasterClassCtrl'
         )
 
       # enable HTML5 Mode for SEO
@@ -22,7 +27,7 @@ angular
       # default fall back route
       $urlRouterProvider.otherwise('/')
 
-      $httpProvider.defaults.headers.common['X-CSRF-Token'] = 
+      $httpProvider.defaults.headers.common['X-CSRF-Token'] =
         $('meta[name=csrf-token]').attr('content')
 
   ])

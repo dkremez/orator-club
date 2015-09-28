@@ -44,6 +44,14 @@ gem 'capistrano-rbenv', "~> 2.0"
 # Use Unicorn as our app server
 gem 'unicorn'
 
+gem 'activeadmin', '~> 1.0.0.pre2'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
